@@ -1,0 +1,105 @@
+{
+  "name": "File Sharing Premium Bot",
+  "description": "Telegram File Sharing Premium Bot Bot ",
+  "logo": "https://graph.org/file/2f461540c83b362772714.jpg",
+  "keywords": ["File Sharing Premium Bot", "Mongo DB"],    
+  "repository": "https://github.com/JishuDeveloper/File-Sharing-Bot",
+  "success_url": "https://t.me/Madflix_Bots",
+  "env": {
+      "API_ID": {
+          "description": "Your APP ID From my.telegram.org ",
+          "value": "6",
+          "required": true
+      },
+      "API_HASH": {
+          "description": "Your API Hash From my.telegram.org ",
+          "value": "eb06d4abfb49dc3eeb1aeb98ae0f581e",
+          "required": true
+      },
+      "BOT_TOKEN": {
+          "description": "Your Bot Token From @BotFather",
+          "value": "",
+          "required": true
+      },
+      "OWNER_ID": {
+        "description":"Add Your User ID here",
+        "value": "6483848643",
+        "required": true
+      },
+      "CHANNEL_ID": {
+          "description":"Make a channel (database channel), then make the bot as admin in channel, and it's id",
+          "value": "-1002167655905",
+          "required": true          
+      },
+      "FORCE_SUB_CHANNEL": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "-1002466238730",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL2": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "-1002342554864",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL3": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "-1002277738558",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL4": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "-1002448808773",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL5": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "-1002199397571",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL6": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "-10022658104623",
+        "required": false
+      },
+      "DB_URL": {
+          "description": "Your Mongo DB Database URL",
+          "value": "mongodb+srv://iystampan:iystampan@iystore.yglf3jm.mongodb.net/?retryWrites=true&w=majority&appName=IYSTORE",
+          "required": true
+      },
+      "DB_NAME":{ 
+          "description":"Your Mongo DB Database Name",
+          "value": "IYSTORE",
+          "required": false
+      },
+      "START_MESSAGE": {
+        "description": "Optional: start message of bot, use HTML parsemode format",
+        "value": "Hello {mention}\n\nI Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.",
+        "required": false
+      },
+      "FORCE_SUB_MESSAGE": {
+        "description": "Optional: Force Sub message of bot, use HTML parsemode format",
+        "value": "Hello {mention}\n\n<b>You Need To Join In My Channel To Use Me\n\nKindly Please Join Channel</b>",
+        "required": false
+      },
+      "ADMINS": {
+        "description": "A space separated list of user_ids of Admins, they can only create links",
+        "value": "",
+        "required": false
+      },
+      "PROTECT_CONTENT": {
+        "description": "Protect contents from getting forwarded",
+        "value": "False",
+        "required": false
+      },
+      "FILE_AUTO_DELETE": {
+        "description": "auto delete in seconds",
+        "value": "600",
+        "required": false
+      }
+  },
+  "buildpacks": [
+      {
+          "url": "heroku/python"
+      }
+  ]
+}
