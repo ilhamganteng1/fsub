@@ -94,6 +94,3 @@ broadcast - broadcast any messages to bot users
 stats - checking your bot uptime
 ```
 
-- [PayPal](https://paypal.me/jishudeveloper/2.50USD)
-- [PhonePe](https://graph.org/file/6822df5af3a2e80637172.jpg)
-- [UPI](https://graph.org/file/b831109be4acff5c966d2.jpg)
