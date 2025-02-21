@@ -52,8 +52,8 @@
 - Customisable welcome & Forcesub messages.
 - More than one Posts in One Link.
 - Can be deployed on heroku directly.
-- Deploy to Koyeb + Heroku + Railway.
-- Developer Service 24x7.
+- Deploy  Heroku + VPS .
+- Developer Service 24/7.
 
 
 
