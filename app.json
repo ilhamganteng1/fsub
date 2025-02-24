@@ -51,16 +51,6 @@
         "value": "-1002448808773",
         "required": false
       },
-      "FORCE_SUB_CHANNEL5": {
-        "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "-1002199397571",
-        "required": false
-      },
-      "FORCE_SUB_CHANNEL6": {
-        "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "-10022658104623",
-        "required": false
-      },
       "DB_URL": {
           "description": "Your Mongo DB Database URL",
           "value": "mongodb+srv://iystampan:iystampan@iystore.yglf3jm.mongodb.net/?retryWrites=true&w=majority&appName=IYSTORE",
