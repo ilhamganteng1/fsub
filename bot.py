@@ -5,7 +5,7 @@ from pyrogram import Client
 from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
-from config import API_HASH, API_ID, LOGGER, BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL2, FORCE_SUB_CHANNEL3, FORCE_SUB_CHANNEL4, FORCE_SUB_CHANNEL5, FORCE_SUB_CHANNEL6, CHANNEL_ID, PORT
+from config import API_HASH, API_ID, LOGGER, BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL2, FORCE_SUB_CHANNEL3, FORCE_SUB_CHANNEL4, CHANNEL_ID, PORT
 import pyrogram.utils
 
 pyrogram.utils.MIN_CHANNEL_ID = -1009999999999
@@ -83,35 +83,6 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Please Double Check The FORCE_SUB_CHANNEL4 Value And Make Sure Bot Is Admin In Channel With Invite Users Via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL4}")
                 self.LOGGER(__name__).info("\nBot Stopped. https://t.me/MadflixBots_Support For Support")
                 sys.exit()
-                
-        if FORCE_SUB_CHANNEL5:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL5)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL5)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL5)).invite_link
-                self.invitelink5 = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot Can't Export Invite link From Force Sub Channel !")
-                self.LOGGER(__name__).warning(f"Please Double Check The FORCE_SUB_CHANNEL4 Value And Make Sure Bot Is Admin In Channel With Invite Users Via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL5}")
-                self.LOGGER(__name__).info("\nBot Stopped. https://t.me/MadflixBots_Support For Support")
-                sys.exit()
-
-        if FORCE_SUB_CHANNEL6:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL6)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL6)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL6)).invite_link
-                self.invitelink6 = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot Can't Export Invite link From Force Sub Channel !")
-                self.LOGGER(__name__).warning(f"Please Double Check The FORCE_SUB_CHANNEL4 Value And Make Sure Bot Is Admin In Channel With Invite Users Via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL6}")
-                self.LOGGER(__name__).info("\nBot Stopped. https://t.me/MadflixBots_Support For Support")
-                sys.exit()
-
 
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
