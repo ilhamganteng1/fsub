@@ -77,40 +77,6 @@ async def is_subscribed(filter, client, update):
 
 
 async def is_subscribed(filter, client, update):
-    if not FORCE_SUB_CHANNEL5:
-        return True
-    user_id = update.from_user.id
-    if user_id in ADMINS:
-        return True
-    try:
-        member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL5, user_id = user_id)
-    except UserNotParticipant:
-        return False
-
-    if not member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]:
-        return False
-    else:
-        return True
-
-
-async def is_subscribed(filter, client, update):
-    if not FORCE_SUB_CHANNEL6:
-        return True
-    user_id = update.from_user.id
-    if user_id in ADMINS:
-        return True
-    try:
-        member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL6, user_id = user_id)
-    except UserNotParticipant:
-        return False
-
-    if not member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]:
-        return False
-    else:
-        return True
-
-
-async def is_subscribed(filter, client, update):
     if not FORCE_SUB_CHANNEL:
         return True
     if not FORCE_SUB_CHANNEL2:
@@ -118,10 +84,6 @@ async def is_subscribed(filter, client, update):
     if not FORCE_SUB_CHANNEL3:
         return True
     if not FORCE_SUB_CHANNEL4:
-        return True
-    if not FORCE_SUB_CHANNEL5:
-        return True
-    if not FORCE_SUB_CHANNEL6:
         return True
     user_id = update.from_user.id
     if user_id in ADMINS:
@@ -143,21 +105,6 @@ async def is_subscribed(filter, client, update):
     
     try:
         member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL4, user_id = user_id)
-    except UserNotParticipant:
-        return False
-    else:
-        return True
-        
-    try:
-        member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL5, user_id = user_id)
-    except UserNotParticipant:
-        return False
-    else:
-        return True
-        
-    try:
-        return True   
-        member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL6, user_id = user_id)
     except UserNotParticipant:
         return False
     else:
