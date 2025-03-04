@@ -37,7 +37,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't Send Me Messages Directly I'm Only File Share Bot !"
 
 START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nI Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.")
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {ᴍᴇɴᴛɪᴏɴ}\n\n<ʙ>ᴀɴᴅᴀ ʜᴀʀᴜꜱ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ/ɢʀᴜᴘ ꜱᴀʏᴀ ᴜɴᴛᴜᴋ ᴍᴇɴᴏɴᴛᴏɴ ᴠɪᴅᴇᴏɴʏᴀ ꜱɪʟᴀᴋᴀɴ ᴊᴏɪɴ ᴋᴇ ᴄʜᴀɴɴᴇʟ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴅɪʙᴀᴡᴀʜ ɪɴɪ")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>ʜᴇʟʟᴏ</b> {mention}\n\n<b>ᴀɴᴅᴀ ʜᴀʀᴜꜱ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ᴄʜᴀɴɴᴇʟ/ɢʀᴜᴘ ꜱᴀʏᴀ ᴜɴᴛᴜᴋ ᴍᴇɴᴏɴᴛᴏɴ ᴠɪᴅᴇᴏɴʏᴀ ꜱɪʟᴀᴋᴀɴ ᴊᴏɪɴ ᴋᴇ ᴄʜᴀɴɴᴇʟ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴅɪʙᴀᴡᴀʜ ɪɴɪ\n\n𝗔𝗦𝗨𝗣𝗔𝗡 𝗚𝗥𝗔𝗧𝗜𝗦 : https://t.me/+hrynezZvoTo4MzRl")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6848088376)
