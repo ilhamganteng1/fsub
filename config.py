@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7911768149:AAGRQ8JfthqasJMyhE6z6HISmfrv8diwnOA")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8059723825:AAHZBnQZSMDlmBYPTAHAqirU0YsRAMYd8sM")
 API_ID = int(os.environ.get("API_ID", "6"))
 API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
 
@@ -16,13 +16,13 @@ DB_NAME = os.environ.get("DB_NAME", "IYSTORE")
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002298018816"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002467885192"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002467885192"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002452621314"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002357343731"))
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "60000000000")) # auto delete in seconds
 
 
-PORT = os.environ.get("PORT", "8080")
+PORT = os.environ.get("PORT", "8083")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
