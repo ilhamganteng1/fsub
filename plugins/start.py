@@ -134,8 +134,10 @@ async def start_command(client: Client, message: Message):
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
+        
         [
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink)
+            InlineKeyboardButton(text="Join Channel 1", url=client.invitelink),
+            InlineKeyboardButton(text="Join Channel 2", url=client.invitelink2),
         ]
     ]
     try:
