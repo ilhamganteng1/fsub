@@ -16,10 +16,10 @@ async def stats(bot: Bot, message: Message):
 
 
 
-@Bot.on_message(filters.private & filters.incoming)
-async def useless(_,message: Message):
-    if USER_REPLY_TEXT:
-        await message.reply(USER_REPLY_TEXT)
+# @Bot.on_message(filters.private & filters.incoming)
+# async def useless(_,message: Message):
+#     if USER_REPLY_TEXT:
+#         await message.reply(USER_REPLY_TEXT)
 
 
 

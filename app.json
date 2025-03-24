@@ -8,12 +8,12 @@
   "env": {
       "API_ID": {
           "description": "Your APP ID From my.telegram.org ",
-          "value": "6",
+          "value": "",
           "required": true
       },
       "API_HASH": {
           "description": "Your API Hash From my.telegram.org ",
-          "value": "eb06d4abfb49dc3eeb1aeb98ae0f581e",
+          "value": "",
           "required": true
       },
       "BOT_TOKEN": {
@@ -23,42 +23,27 @@
       },
       "OWNER_ID": {
         "description":"Add Your User ID here",
-        "value": "6483848643",
+        "value": "",
         "required": true
       },
       "CHANNEL_ID": {
           "description":"Make a channel (database channel), then make the bot as admin in channel, and it's id",
-          "value": "-1002167655905",
+          "value": "",
           "required": true          
       },
       "FORCE_SUB_CHANNEL": {
         "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "-1002466238730",
-        "required": false
-      },
-      "FORCE_SUB_CHANNEL2": {
-        "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "-1002342554864",
-        "required": false
-      },
-      "FORCE_SUB_CHANNEL3": {
-        "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "-1002277738558",
-        "required": false
-      },
-      "FORCE_SUB_CHANNEL4": {
-        "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "-1002448808773",
+        "value": "0",
         "required": false
       },
       "DB_URL": {
           "description": "Your Mongo DB Database URL",
-          "value": "mongodb+srv://iystampan:iystampan@iystore.yglf3jm.mongodb.net/?retryWrites=true&w=majority&appName=IYSTORE",
+          "value": "",
           "required": true
       },
       "DB_NAME":{ 
           "description":"Your Mongo DB Database Name",
-          "value": "IYSTORE",
+          "value": "madflixbotz",
           "required": false
       },
       "START_MESSAGE": {
