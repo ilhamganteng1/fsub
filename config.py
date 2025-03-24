@@ -5,31 +5,31 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7552440587:AAFABzck-xRa70aCAwEw9XKECbfOFqHPRpc")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7760223781:AAE0F6XZrOiA4K3RlW-0TDXxaYC2LqTbSYs")
 API_ID = int(os.environ.get("API_ID", "6"))
 API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "5839381774"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1386757974"))
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://iystampan:iystampan@iystore.yglf3jm.mongodb.net/?retryWrites=true&w=majority&appName=IYSTORE")
 DB_NAME = os.environ.get("DB_NAME", "IYSTORE")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002298018816"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002270682191"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002496261674"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002467991591"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001872568392"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001521610406"))
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "60000000000")) # auto delete in seconds
 
 
-PORT = os.environ.get("PORT", "8080")
+PORT = os.environ.get("PORT", "8082")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 
 try:
-    ADMINS=[65839381774]
-    for x in (os.environ.get("ADMINS", "65839381774").split()):
+    ADMINS=[1799716862]
+    for x in (os.environ.get("ADMINS", "1799716862").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
